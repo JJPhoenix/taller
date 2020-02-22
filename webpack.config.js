@@ -65,28 +65,16 @@ module.exports={
         new VueLoaderPlugin(),
         new HtmlWebpackLUGIN({
             vue:true,
-            favicon: './src/assets/favicon.png',
-            title: 'shibuya',
+            title: 'taller',
             template: './src/index.html'
         }),
         new CopyPlugin([
-            {
-                from: 'src/assets/img',
-                to:'assets/img',
-            },
-            {
-                from: 'src/assets/fonts',
-                to: 'assets/fonts',
-            },
+
         ])
     ],
     resolve: {
         alias: {
-            Components: path.resolve(__dirname,'src/components/'),
-            Views: path.resolve(__dirname,'src/views/'),
-            Img: path.resolve(__dirname,'src/assets/img/'),
-            Fonts: path.resolve(__dirname, 'src/assets/fonts/'),
-            Config: path.resolve(__dirname, 'src/views/config/'),
+
         },
         descriptionFiles: ['package.json']
     }
