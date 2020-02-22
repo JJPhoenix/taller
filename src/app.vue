@@ -1,15 +1,20 @@
 <template>
     <div>
-        <h1>hola mundo</h1>
+        <header-proyecto></header-proyecto>
+        <main></main>
     </div>
 </template>
 
 <script>
+    import headerProyecto from '../src/component/principal/header-proyecto.vue';
     export default {
-        name: "app"
+        name: "app",
+        components:{
+            "header-proyecto": headerProyecto
+        }
     }
 </script>
 
-<style scoped>
-
+<style scoped lang="scss">
+    @import "assets/style/main";
 </style>
